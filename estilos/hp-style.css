@@ -1,0 +1,182 @@
+:root{
+    --bg-color-01: #171717;
+    --bg-color-02: #cccccc;
+}
+
+/* SEÇÃO 01 */ 
+
+.conteudo__section-cadastro-aluno{
+    background-color: var(--bg-color-01);
+    color: white;
+    padding: 8rem 10rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.conteudo__titulo-aluno{
+    font-size: 2.5em;
+
+    position: relative;
+    z-index: 1;
+}
+
+.conteudo__texto-aluno{
+    text-align: justify;
+    font-size: 1.5em;
+    width: 30rem;
+    margin: 1rem 0;
+
+    position: relative;
+    z-index: 1;
+}
+
+.conteudo__button-aluno{
+    background-color: red;
+    border: none;
+    padding: 1rem 0rem;
+    box-shadow: 0 0 20px black;
+    border-radius: 5px;
+    transition: 0.5s;
+
+    position: relative;
+    z-index: 1;
+}
+
+.conteudo__button-aluno:hover{
+    box-shadow: 0 0 15px red;
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+.conteudo__link-aluno{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 500;
+    padding: 1rem 5rem;
+}
+
+.conteudo__section-cadastro-aluno::after{
+    content: url(../imagens/estudante.png);
+    position: absolute;
+    right: 8rem;
+    bottom: -6rem;
+    z-index: 0;
+}
+
+/* SEÇÃO 02 */
+
+.conteudo__section-cadastro-prof{
+    padding: 2rem 10rem;
+    color: var(--bg-color-01);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudo__titulo-prof{
+    font-size: 2.5em;
+}
+
+.conteudo__texto-prof{
+    font-size: 1.5em;
+    margin: 1rem 0 2rem 0;
+}
+
+.conteudo__texto-prof > span{
+    color: red;
+}
+
+.conteudo__button-prof{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid var(--bg-color-01);
+    padding: 1rem 0rem;
+    
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.conteudo__button-prof:hover{
+    background-color: red;
+    box-shadow: 0 0 15px red;
+    scale: 1.05;
+    transition: 0.5s;
+    border: none;
+}
+
+.conteudo__link-prof{
+    color: var(--bg-color-01);
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 500;
+    transition: 0.5s;
+    padding: 1rem 5rem;
+}
+
+.conteudo__link-prof:hover{
+    transition: 0.5s;
+    color: white;
+}
+
+/* SEÇÃO 03 */
+
+.conteudo__section-listas{
+    background-image: linear-gradient(to bottom, white, var(--bg-color-02));
+    padding: 3rem 10rem;
+    position: relative;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.conteudo__section-lista-titulo{
+    text-align: center;
+    width: 100%;
+}
+
+.conteudo__lista-titulo{
+    font-size: 1.8rem;
+}
+
+.conteudo__lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudo__lista-button{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid var(--bg-color-01);
+    padding: 0.8rem 0rem;
+    margin-top: 1rem;
+    
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.conteudo__lista-button:hover{
+    background-color: red;
+    box-shadow: 0 0 15px red;
+    scale: 1.05;
+    transition: 0.5s;
+    border: none;
+}
+
+.conteudo__lista-link{
+    color: var(--bg-color-01);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 500;
+    transition: 0.5s;
+    padding: 0.8rem 3rem;
+}
+
+.conteudo__lista-link:hover{
+    transition: 0.5s;
+    color: white;
+}

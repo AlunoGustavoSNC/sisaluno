@@ -4,25 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Gustavo Nascimento">
+    <meta name="keywords" content="HTML, CSS, PHP, if baiano, avaliação">
+    <meta name="description" content="Sistema desenvolvido para a disciplina Programação de Sistemas Web 1 do instituto federal baiano - campus guanambi">
+
+    <title>Cursos Preparatorios</title>
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style-modificador.css">
+    <link rel="stylesheet" href="estilos/hp-style.css">
+
 </head>
 <body>
-    <header>
-        <h1>CURSOS PREPARATORIOS</h1>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li>Sobre</li>
-            <li>Planos</li>
+    <header class="menu">
+
+        <!-- LOGO -->
+        <div class="menu__container-logo">
+            <img src="imagens/logo.png" alt="" class="menu__img-logo">
+
+            <h1 class="menu__nome-logo">CURSOS <br> PREPARATORIOS</h1>
+        </div>
+
+        <!-- NAVBAR -->
+        <ul class="menu__lista">
+            <li class="menu__item"><a class="menu__link" href="#">Início</a></li>
+
+            <li class="menu__item menu__item--disabled">Sobre</li>
+
+            <li class="menu__item menu__item--disabled">Planos</li>
         </ul>
     </header>
-    <main>
-        <a href="cadAluno.html">Cadastrar Aluno</a>
+    <main class="conteudo">
 
-        <a href="listaAlunos.php">Lista de Alunos</a> 
+        <!-- SEÇÃO 01 -->
+        <section class="conteudo__section-cadastro-aluno">
+            <h1 class="conteudo__titulo-aluno">CURSOS <br> PREPARATORIOS</h1>
+
+            <p class="conteudo__texto-aluno">Precisa de ajuda nos estudos? Venha para a comunidade do <strong>Cursos Preparatorios</strong> e melhore seu rendimento escolar! E o melhor de tudo, é <strong>gratuito</strong></p>
+
+            <button class="conteudo__button-aluno"><a class="conteudo__link-aluno" href="aluno/cadAluno.html">Cadastrar</a></button>    
+        </section>
+
+        <!-- SEÇÃO 02 -->
+        <section class="conteudo__section-cadastro-prof">
+            <h1 class="conteudo__titulo-prof">Colabore Ativamente</h1>
+
+            <p class="conteudo__texto-prof">Ajude ativamente a plataforma, se torne um <span>professor</span> e nos ajude a <strong>melhorar o ensino brasileiro</strong></p>
+
+            <button class="conteudo__button-prof"><a class="conteudo__link-prof" href="#">Cadastrar</a></button>
+        </section>
+
+        <!-- SEÇÃO 03 -->
+        <section class="conteudo__section-listas">
+            <h1 class="conteudo__section-lista-titulo">Listas</h1>
+
+            <section class="conteudo__lista-aluno conteudo__lista">
+                <h2 section class="conteudo__lista-titulo">Alunos</h2>
+                <button class="conteudo__lista-button"><a href="" class="conteudo__lista-link">Acessar</a></button>
+            </section>
+
+            <section class="conteudo__lista-prof conteudo__lista">
+                <h2 section class="conteudo__lista-titulo ">Professores</h2>
+                <button class="conteudo__lista-button"><a href="" class="conteudo__lista-link">Acessar</a></button>
+            </section>
+
+            <section class="conteudo__lista-disciplina conteudo__lista">
+                <h2 section class="conteudo__lista-titulo">Disciplinas</h2>
+                <button class="conteudo__lista-button"><a href="" class="conteudo__lista-link">Acessar</a></button>
+            </section>
+        </section>
     </main>
-    <footer>
+    
+    <footer class="rodape">
         <p>GUSTAVO NASCIMENTO</p>
+        <p>gustavosncosta@gmail.com</p>
+        <br>
         <P>IF BAIANO | CAMPUS GUANAMBI</P>
     </footer> 
 </body>

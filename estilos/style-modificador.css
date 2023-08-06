@@ -1,0 +1,14 @@
+.menu__item--disabled{
+    color: #6f6f6f;
+}
+
+/* FORM ALUNO */
+
+.conteudo__form-input--button{
+    transition: 0.5s;
+}
+
+.conteudo__form-input--button:hover{
+    transition: 0.5s;
+    background-color: #3bd913;
+}

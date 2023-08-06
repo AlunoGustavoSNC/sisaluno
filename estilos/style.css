@@ -1,0 +1,121 @@
+:root{
+    --bg-color-01: #171717;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: normal, sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-rows: 70px 1fr 120px;
+}
+
+/* GLOBAL */ 
+
+button{
+    cursor: pointer;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+/* SCROLLBAR */
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: #EEEEEE;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: #303030;
+}
+
+/* HEADER */
+
+.menu{
+    background: var(--bg-color-01);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+}
+
+.menu__container-logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 100%;
+    cursor:default;
+    transition: 0.5s;
+}
+
+.menu__container-logo:hover{
+    scale: 1.02;
+    transition: 0.5s;
+}
+
+.menu__img-logo{
+    height: 100%;
+}
+
+.menu__nome-logo{
+    font-size: 1rem;
+}
+
+.menu__lista{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+/*.menu__item{
+
+}*/
+
+.menu__link{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.menu__link:hover{
+    color: #cdcdcd;
+    text-decoration: none;
+    transition: 0.5s;
+    transform: scale(1.01);
+}
+
+/* MAIN */ 
+
+/*.conteudo {
+
+}*/
+
+/* FOOTER */ 
+
+.rodape{
+    background-color: var(--bg-color-01);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
