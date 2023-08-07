@@ -39,7 +39,7 @@
         $id = $_POST['id'];
 
         ##sql para selecionar apens um aluno
-        $sql = "SELECT * FROM Aluno where id = :id";
+        $sql = "SELECT * FROM Professor where id = :id";
 
         # junta o sql a conexao do banco
         $retorno = $conexao->prepare($sql);
@@ -56,6 +56,7 @@
         ##armazena retorno em variaveis
         $nome = $array_retorno['nome'];
         $idade = $array_retorno['idade'];
+        $cpf = $array_retorno['cpf'];
         $dataNascimento = $array_retorno['datanascimento'];
         $endereco = $array_retorno['endereco'];
         $estatus = $array_retorno['estatus'];
@@ -64,13 +65,18 @@
         <section class="conteudo">
 
         
-        <form class="conteudo__form-aluno" action="crudAluno.php" method="post">
-            <h1 class="conteudo__titulo-form-aluno">Alteração de Aluno</h1>
+        <form class="conteudo__form-professor" action="crudprofessor.php" method="post">
+            <h1 class="conteudo__titulo-form-aluno">Alteração de Professor</h1>
 
             <input type="hidden" name="id" id="" value="<?php echo $id ?>">
             <label for="nome">
                 Nome:
                 <input type="text" name="nome" required value="<?php echo $nome ?>" placeholder="Digite seu nome">
+            </label>
+
+            <label for="cpf">
+                CPF:
+                <input type="text" name="cpf" required value="<?php echo $cpf ?>" placeholder="Digite sua idade">
             </label>
             
             <label for="idade">

@@ -3,7 +3,7 @@
 define('HOST', 'localhost');
 define('USUARIO', 'root');
 define('SENHA', '17122004');
-define('DBNAME', 'CURSO');
+define('DBNAME', 'sisaluno');
 
 //Criar a conexão com banco de dados usando o PDO e a porta do banco de dados
 //Utilizar o Try/Catch para verificar a conexão.

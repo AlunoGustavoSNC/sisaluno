@@ -13,12 +13,38 @@
     <link rel="stylesheet" href="../estilos/formulario.css">
 </head>
 <body>
-    <main class="conteudo">
-        <form class="conteudo__form-aluno" action="crudAluno.php" method="get">
-            <h1 class="conteudo__titulo-form-aluno">Cadastro de Aluno</h1>
+    <header class="menu">
+
+        <!-- LOGO -->
+        <div class="menu__container-logo">
+            <img src="../imagens/logo.png" alt="" class="menu__img-logo">
+
+            <h1 class="menu__nome-logo">CURSOS <br> PREPARATORIOS</h1>
+        </div>
+
+        <!-- NAVBAR -->
+        <ul class="menu__lista">
+            <li class="menu__item"><a class="menu__link" href="../index.html">Início</a></li>
+
+            <li class="menu__item menu__item--disabled">Sobre</li>
+
+            <li class="menu__item menu__item--disabled">Planos</li>
+        </ul>
+    </header>
+    <main>
+        <section class="conteudo">
+
+        
+        <form class="conteudo__form-professor" action="crudprofessor.php" method="get">
+            <h1 class="conteudo__titulo-form-aluno">Cadastro de Professor</h1>
             <label for="nome">
                 Nome:
                 <input type="text" name="nome" required placeholder="Digite seu nome">
+            </label>
+
+            <label for="cpf">
+                CPF:
+                <input type="text" name="cpf" required placeholder="Apenas números">
             </label>
             
             <label for="idade">
@@ -26,9 +52,9 @@
                 <input type="text" name="idade" required placeholder="Digite sua idade">
             </label>
             
-            <label for="dataNascimento">
+            <label for="datanascimento">
                 Data de Nascimento:
-                <input type="date" name="dataNascimento" required>
+                <input type="date" name="datanascimento" required>
             </label>
             
             <label for="endereco">
@@ -39,11 +65,11 @@
             <label for="estatus">
                 Status:
                 <label for="">
-                    <input type="radio" name="estatus" value="A" checked>
+                    <input type="radio" name="estatus" value="1" checked>
                     Ativo
                 </label>
                 <label for="">
-                    <input type="radio" name="estatus" value="D">
+                    <input type="radio" name="estatus" value="0">
                     Desativo
                 </label>
             </label>
@@ -52,9 +78,6 @@
                 <input type="submit" name="cadastrar" value="Cadastrar" class="conteudo__form-input--button">  
             </label>
         </form>
-
-        <section class="conteudo__plus">
-
         </section>
     </main>
 </body>

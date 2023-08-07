@@ -36,7 +36,7 @@
             /* Melhor prática usando Prepared Statements */
             require_once('../conexao.php');
    
-            $retorno = $conexao->prepare('SELECT * FROM aluno');
+            $retorno = $conexao->prepare('SELECT * FROM Professor');
             $retorno->execute();
         ?>
 
@@ -46,6 +46,7 @@
                     <tr>
                         <th>ID</th>
                         <th>NOME</th>
+                        <th>CPF</th>
                         <th>IDADE</th>
                         <th>DATA DE NASCIMENTO</th>
                         <th>ENDEREÇO</th>
@@ -59,13 +60,14 @@
                             <tr>
                                 <td> <?php echo $value['id'] ?>   </td> 
                                 <td> <?php echo $value['nome']?>  </td> 
+                                <td> <?php echo $value['cpf']?>  </td> 
                                 <td> <?php echo $value['idade']?> </td> 
                                 <td> <?php echo $value['datanascimento']?> </td> 
                                 <td> <?php echo $value['endereco']?> </td> 
                                 <td> <?php echo $value['estatus']?> </td>  
 
                                 <td class="button">
-                                   <form method="POST" action="altaluno.php">
+                                   <form method="POST" action="altprofessor.php">
                                             <input name="id" type="hidden" value="<?php echo $value['id'];?>"/>
                                             <button name="alterar"  type="submit">Alterar</button>
                                     </form>
@@ -73,7 +75,7 @@
                                  </td> 
 
                                  <td class="button">
-                                   <form method="GET" action="crudaluno.php">
+                                   <form method="GET" action="crudprofessor.php">
                                             <input name="id" type="hidden" value="<?php echo $value['id'];?>"/>
                                             <button name="excluir"  type="submit">Excluir</button>
                                     </form>

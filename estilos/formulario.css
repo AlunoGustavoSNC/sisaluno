@@ -7,7 +7,9 @@ body{
     background-color: var(--bg-color-02);
     width: 100%;
     height: 100vh;
+}
 
+main{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,10 +20,6 @@ body{
     color: white;
     
     border-radius: 10px;
-
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    gap: 20px;
 }
 
 /* CADASTRO ALUNO */
@@ -89,6 +87,124 @@ body{
 
 .conteudo__form-aluno > label[for="button"]{
     grid-column: 1/3;
+}
+
+.conteudo__plus{
+    background-color: var(--bg-color-01);
+    border-radius: 15px;
+}
+
+/* PROFESSOR */ 
+
+.conteudo__form-professor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr 0.7fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.conteudo__titulo-form-aluno{
+    text-align: center;
+    grid-column: 1/3;
+    font-size: 2rem;
+}
+.conteudo__form-professor > label{
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+.conteudo__form-professor > label[for="nome"]{
+    grid-column: 1/3;
+}
+
+.conteudo__form-professor > label[for="cpf"]{
+    grid-column: 1/3;
+}
+
+.conteudo__form-professor > label[for="endereco"]{
+    grid-column: 1/3;
+}
+
+.conteudo__form-professor > label[for="estatus"]{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.conteudo__form-professor > label[for="estatus"] > label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.conteudo__form-professor > label[for="estatus"] > label > input{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.conteudo__form-professor label input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 1.1em;
+    background: #656565;
+    color: white;
+}
+
+.conteudo__form-professor label input::placeholder{
+    color: #414141;
+}
+
+.conteudo__form-professor label input:checked{
+    border: 1px solid black;
+}
+
+.conteudo__form-professor > label[for="button"]{
+    grid-column: 1/3;
+}
+
+.conteudo__plus{
+    background-color: var(--bg-color-01);
+    border-radius: 15px;
+}
+
+/* DISCIPLINA */
+
+.conteudo__form-disciplina{
+    display: grid;
+    
+    gap: 10px;
+    padding: 20px;
+}
+
+.conteudo__titulo-form-disciplina{
+    text-align: center;
+    
+    font-size: 2rem;
+}
+.conteudo__form-disciplina > label{
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+.conteudo__form-disciplina label input, .conteudo__form-disciplina label select{
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 1.1em;
+    background: #656565;
+    color: white;
+}
+
+.conteudo__form-disciplina label input::placeholder{
+    color: #414141;
+}
+
+.conteudo__form-disciplina label input:checked{
+    border: 1px solid black;
 }
 
 .conteudo__plus{

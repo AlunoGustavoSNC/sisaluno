@@ -13,7 +13,28 @@
     <link rel="stylesheet" href="../estilos/formulario.css">
 </head>
 <body>
-    <main class="conteudo">
+    <header class="menu">
+
+        <!-- LOGO -->
+        <div class="menu__container-logo">
+            <img src="imagens/logo.png" alt="" class="menu__img-logo">
+
+            <h1 class="menu__nome-logo">CURSOS <br> PREPARATORIOS</h1>
+        </div>
+
+        <!-- NAVBAR -->
+        <ul class="menu__lista">
+            <li class="menu__item"><a class="menu__link" href="../index.html">Início</a></li>
+
+            <li class="menu__item menu__item--disabled">Sobre</li>
+
+            <li class="menu__item menu__item--disabled">Planos</li>
+        </ul>
+    </header>
+    <main>
+        <section class="conteudo">
+
+        
         <form class="conteudo__form-aluno" action="crudAluno.php" method="get">
             <h1 class="conteudo__titulo-form-aluno">Cadastro de Aluno</h1>
             <label for="nome">
@@ -26,9 +47,9 @@
                 <input type="text" name="idade" required placeholder="Digite sua idade">
             </label>
             
-            <label for="dataNascimento">
+            <label for="datanascimento">
                 Data de Nascimento:
-                <input type="date" name="dataNascimento" required>
+                <input type="date" name="datanascimento" required>
             </label>
             
             <label for="endereco">
@@ -52,9 +73,6 @@
                 <input type="submit" name="cadastrar" value="Cadastrar" class="conteudo__form-input--button">  
             </label>
         </form>
-
-        <section class="conteudo__plus">
-
         </section>
     </main>
 </body>

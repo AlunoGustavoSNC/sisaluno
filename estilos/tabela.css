@@ -1,0 +1,27 @@
+
+
+table{
+    width: 100%;
+}
+
+thead{
+    background-color: rgb(93, 93, 93);
+    color: white;
+}
+
+th, td{
+    padding: 5px;
+    border: 1px solid rgb(51, 51, 51);
+}
+
+td button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+}
+
+td.button{
+    padding: 0;
+}
+
