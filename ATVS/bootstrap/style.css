@@ -1,0 +1,35 @@
+body{
+    background-color: #324255;
+    color: #d2d2d2;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+
+    display: grid;
+    grid-template-rows: 120px 60px 600px 100px;
+    grid-template-columns: 100vw;
+}
+
+nav{
+    background-color: #576c85;
+    color: #d2d2d2;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main form{
+    background-color: #576c85;
+    border: 1px solid #283646;
+    padding: 40px 10px;
+    border-radius: 15px;
+    width: 50%;
+}
+
+footer{
+    background-color: #576c85;  
+}
